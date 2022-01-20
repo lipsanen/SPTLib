@@ -187,7 +187,6 @@ namespace patterns
 	 *	);
 	 */
 	#define PATTERNS(name, ...) \
-		MAKE_PATTERNS(name, __VA_ARGS__) \
 		constexpr auto name = ::patterns::make_pattern_array( \
 			NAME_PATTERNS(name, __VA_ARGS__) \
 		);
